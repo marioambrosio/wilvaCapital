@@ -54,6 +54,7 @@ $currentDate = date('d M Y - H:i');
       }
     </script>
 </head>
+<div class="h-[600px]"></div>
 
 <body class="bg-white text-slate-900 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-pink selection:text-white">
 

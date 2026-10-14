@@ -2,79 +2,50 @@
     <div class="max-w-7xl mx-auto px-6">
         
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <div class="inline-flex items-center gap-2 px-3 py-1 mb-3 text-xs font-bold tracking-widest uppercase text-brand-pink bg-pink-50 border border-pink-200 rounded-full">
-                Por Qué Elegirnos
-            </div>
+            <span class="inline-block px-3 py-1 bg-pink-50 border border-pink-200 text-brand-pink text-xs font-black uppercase tracking-widest rounded-full mb-3">
+                ¿Por qué elegirnos?
+            </span>
             <h2 class="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
-                Ventajas Competitivas
+                Ventajas de Operar con WILVA
             </h2>
-            <p class="text-slate-600 text-sm sm:text-base mt-3">
-                Operamos bajo rigurosos estándares de seguridad financiera y atención directa presencial en Bolivia.
+            <p class="text-slate-600 text-sm sm:text-base mt-2">
+                Seguridad bancaria internacional, rapidez en liquidación y presencia física en Bolivia.
             </p>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-pink/40 transition">
-                <div class="w-12 h-12 rounded-xl bg-pink-50 text-brand-pink flex items-center justify-center mb-5">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Ventaja 1 -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-2xl bg-pink-50 text-brand-pink flex items-center justify-center mb-6">
                     <i data-lucide="shield-check" class="w-6 h-6"></i>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Protocolos KYC / KYB</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    Verificamos la legitimidad de cada operación, protegiendo tus transacciones personales o corporativas contra bloqueos o fraudes.
+                <h3 class="text-lg font-black text-slate-900 mb-2">Seguridad y Cumplimiento</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Verificación de identidad (KYC/KYB) y cumplimiento de estándares internacionales contra el fraude para transacciones transparentes.
                 </p>
             </div>
 
-            <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-pink/40 transition">
-                <div class="w-12 h-12 rounded-xl bg-pink-50 text-brand-pink flex items-center justify-center mb-5">
-                    <i data-lucide="percent" class="w-6 h-6"></i>
-                </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Comisión Fija del 2%</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    Sin comisiones sorpresa ni retenciones arbitrarias. Conoces exactamente el porcentaje desde el inicio de la operación.
-                </p>
-            </div>
-
-            <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-pink/40 transition">
-                <div class="w-12 h-12 rounded-xl bg-pink-50 text-brand-pink flex items-center justify-center mb-5">
-                    <i data-lucide="globe" class="w-6 h-6"></i>
-                </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Alcance en +100 Países</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    Llegamos a Estados Unidos, Europa, Asia y toda Latinoamérica mediante transferencias internacionales directas en USDT o SWIFT.
-                </p>
-            </div>
-
-            <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-pink/40 transition">
-                <div class="w-12 h-12 rounded-xl bg-pink-50 text-brand-pink flex items-center justify-center mb-5">
-                    <i data-lucide="building-2" class="w-6 h-6"></i>
-                </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Presencia Física Real</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    No somos una plataforma fantasma. Puedes realizar tus operaciones directamente en nuestras oficinas físicas en Bolivia.
-                </p>
-            </div>
-
-            <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-pink/40 transition">
-                <div class="w-12 h-12 rounded-xl bg-pink-50 text-brand-pink flex items-center justify-center mb-5">
+            <!-- Ventaja 2 -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6">
                     <i data-lucide="zap" class="w-6 h-6"></i>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Liquidación Ágil</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    Minimizamos los tiempos de espera bancarios tradicionales para que tus destinatarios dispongan de los fondos rápidamente.
+                <h3 class="text-lg font-black text-slate-900 mb-2">Velocidad de Liquidación</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Operaciones cripto en minutos y transferencias SWIFT tramitadas en 24 a 72 horas hábiles hacia cualquier país.
                 </p>
             </div>
 
-            <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-pink/40 transition">
-                <div class="w-12 h-12 rounded-xl bg-pink-50 text-brand-pink flex items-center justify-center mb-5">
-                    <i data-lucide="headphones" class="w-6 h-6"></i>
+            <!-- Ventaja 3 -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center mb-6">
+                    <i data-lucide="map-pin" class="w-6 h-6"></i>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Soporte Dedicado</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    Asignamos un asesor humano que te mantiene informado durante todo el trayecto hasta la confirmación de entrega.
+                <h3 class="text-lg font-black text-slate-900 mb-2">Presencia Física</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Atención presencial en nuestras oficinas de El Alto y Cochabamba para entrega y recepción de fondos con total respaldo.
                 </p>
             </div>
-
         </div>
 
     </div>
