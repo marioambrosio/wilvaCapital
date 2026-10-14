@@ -48,19 +48,20 @@ $currentDate = date('d M Y - H:i');
       }
     </script>
 </head>
+
 <body class="bg-white text-slate-900 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-pink selection:text-white">
+
+    <!-- Modal legal obligatorio al entrar -->
+    <?php include __DIR__ . '/components/legal-modal.php'; ?>
 
     <?php include __DIR__ . '/components/header.php'; ?>
     <?php include __DIR__ . '/components/hero.php'; ?>
     <?php include __DIR__ . '/components/features-bar.php'; ?>
-    
-    <!-- Secciones modulares en orden -->
     <?php include __DIR__ . '/components/how-it-works.php'; ?>
-    <?php include __DIR__ . '/components/quote-section.php'; ?>s
+    <?php include __DIR__ . '/components/quote-section.php'; ?>
     <?php include __DIR__ . '/components/advantages.php'; ?>
     <?php include __DIR__ . '/components/offices.php'; ?>
     <?php include __DIR__ . '/components/faq.php'; ?>
-    
     <?php include __DIR__ . '/components/footer.php'; ?>
 
     <script src="assets/js/app.js"></script>

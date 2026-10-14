@@ -11,13 +11,15 @@ return [
         'pillars'        => 'RÁPIDAS  |  SEGURAS  |  CONFIABLES',
         'desc_p1'        => 'Compramos <strong>USDT</strong> al mejor tipo de cambio y realizamos transferencias <strong>SWIFT</strong> a todo el mundo.',
         'desc_p2'        => 'Desde Bolivia hacia cualquier país, con acompañamiento durante todo el proceso.',
-        'comision'       => '2%',
+        'comision'       => 0.02, // 2% comisión base
+        'margen_error'   => 0.03, // 3% margen de cobertura
+        'swift_fee_usd'  => 80.00 // Certificado SWIFT en USD
     ],
     'whatsapp' => [
         'lapaz'      => '59178922125',
         'cochabamba' => '59178920737',
         'msg_send'   => 'Hola WILVA CAPITAL, deseo realizar una transferencia internacional.',
-        'msg_quote'  => 'Hola WILVA CAPITAL, deseo consultar la cotización de USDT del día.'
+        'msg_quote'  => 'Hola WILVA CAPITAL, deseo consultar la cotización del día.'
     ],
     'office' => [
         'city'    => 'Ciudad de El Alto',
