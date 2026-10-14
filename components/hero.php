@@ -1,114 +1,120 @@
-<main class="relative flex-1 bg-gradient-to-br from-slate-50 via-white to-sky-50/40 overflow-hidden" id="inicio">
-    
-    <!-- Texto esquina superior derecha -->
-    <div class="absolute right-8 top-12 hidden xl:block text-[10px] tracking-[0.25em] text-slate-400 uppercase font-semibold leading-relaxed text-right select-none">
-        PERSONAS<br>EMPRESAS<br>NUEVOS<br>HORIZONTES
-        <div class="w-6 h-[2px] bg-brand-pink ml-auto mt-1"></div>
-    </div>
+<section id="inicio" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-slate-50 via-white to-white">
+    <!-- Luz ambiental sutil de fondo -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-pink-100/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
-    <div class="max-w-7xl mx-auto px-6 pt-10 pb-20 grid lg:grid-cols-12 gap-10 items-center">
-        
-        <!-- Columna Izquierda -->
-        <div class="lg:col-span-6 space-y-6 z-10">
-            <div class="flex items-center gap-2">
-                <span class="inline-block w-1.5 h-1.5 rounded-full bg-brand-pink"></span>
-                <span class="text-xs uppercase font-extrabold tracking-[0.22em] text-slate-800">
-                    <?= e($config['brand']['badge']) ?>
-                </span>
-                <span class="inline-block w-8 h-[1.5px] bg-brand-pink/50"></span>
-            </div>
-
-            <h1 class="text-5xl sm:text-6xl lg:text-[4.2rem] font-black tracking-tight leading-[1.03] text-slate-950">
-                <?= e($config['brand']['headline_part1']) ?><br>
-                <span class="text-brand-pink"><?= e($config['brand']['headline_part2']) ?></span>
-            </h1>
-
-            <p class="text-xs sm:text-sm font-bold tracking-[0.28em] text-slate-800 uppercase">
-                <?= e($config['brand']['pillars']) ?>
-            </p>
-
-            <div class="text-slate-600 text-sm sm:text-base leading-relaxed space-y-2 max-w-xl">
-                <p><?= $config['brand']['desc_p1'] ?></p>
-                <p class="text-slate-500 text-sm"><?= e($config['brand']['desc_p2']) ?></p>
-            </div>
-
-            <!-- Botones -->
-            <div class="pt-3 flex flex-wrap gap-4 items-center">
-                <a href="<?= $waSendUrl ?>" target="_blank" class="px-7 py-3.5 rounded-xl bg-brand-pink hover:bg-brand-roseDark text-white font-bold text-sm tracking-wide shadow-lg shadow-pink-500/25 flex items-center gap-2.5 transition transform hover:-translate-y-0.5">
-                    <i data-lucide="send" class="w-4 h-4"></i>
-                    <span>Enviar dinero ahora</span>
-                    <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
-                </a>
-
-                <a href="<?= $waQuoteUrl ?>" target="_blank" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-300 text-slate-800 font-bold text-sm tracking-wide shadow-sm flex items-center gap-2.5 transition">
-                    <i data-lucide="calculator" class="w-4 h-4 text-slate-700"></i>
-                    <span>Cotiza tu transferencia</span>
-                </a>
-            </div>
-        </div>
-
-        <!-- Columna Derecha: Composición Visual (Globo + Celular + Tarjeta USDT) -->
-        <div class="lg:col-span-6 relative flex items-center justify-center min-h-[420px]">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
             
-            <!-- Imagen del Mundo de Fondo -->
-            <div class="relative w-full max-w-[460px] aspect-square flex items-center justify-center">
-                <img src="assets/images/globo-red.png" alt="Conexión Global" class="w-full h-full object-contain drop-shadow-xl" onerror="this.style.display='none';">
+            <!-- Columna Izquierda: Mensaje y Llamados a la Acción -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                
+                <!-- Badge superior -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-50 border border-pink-200/80 text-brand-pink text-xs font-bold tracking-widest uppercase">
+                    <span class="w-2 h-2 rounded-full bg-brand-pink animate-pulse"></span>
+                    <?= e($config['brand']['badge'] ?? 'TU DINERO, SIN FRONTERAS') ?>
+                </div>
 
-                <!-- Mockup del Celular superpuesto a la izquierda del globo -->
-                <div class="relative lg:absolute lg:-left-6 z-20 w-48 sm:w-56 bg-slate-950 rounded-[2.4rem] p-2.5 shadow-2xl border-4 border-slate-800 rotate-[-6deg] hover:rotate-0 transition duration-300">
-                    <div class="h-72 sm:h-80 w-full rounded-[1.9rem] bg-gradient-to-b from-slate-900 via-slate-950 to-[#2a0818] border border-slate-800 p-4 flex flex-col justify-between items-center text-center">
-                        <div class="w-14 h-3.5 bg-black rounded-full mx-auto"></div>
+                <!-- Titular Principal -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-950 tracking-tight leading-[1.1]">
+                    <?= e($config['brand']['headline_part1'] ?? 'Transferencias') ?>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-pink to-brand-roseDark block sm:inline">
+                        <?= e($config['brand']['headline_part2'] ?? 'Internacionales') ?>
+                    </span>
+                </h1>
 
-                        <div class="space-y-2">
-                            <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-brand-pink/50 flex items-center justify-center mx-auto overflow-hidden shadow-md">
-                                <img src="assets/images/logo.jpg" alt="W" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                <span style="display:none;" class="text-white font-black">W</span>
-                            </div>
-                            <span class="text-xs font-black tracking-wider text-white block">
-                                WILVA <span class="text-brand-pink">CAPITAL</span>
-                            </span>
-                            <span class="text-[7px] text-slate-300 uppercase tracking-widest block">FINANZAS SIN FRONTERAS</span>
-                        </div>
+                <!-- Pilares de Confianza -->
+                <p class="text-xs sm:text-sm font-extrabold tracking-[0.2em] text-slate-400 uppercase">
+                    <?= e($config['brand']['pillars'] ?? 'RÁPIDAS  |  SEGURAS  |  CONFIABLES') ?>
+                </p>
 
-                        <p class="font-script text-2xl text-white tracking-wide rotate-[-6deg] mb-4">
-                            El mundo<br>más cerca de ti
-                        </p>
+                <!-- Párrafos Descriptivos -->
+                <div class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 space-y-2">
+                    <p>
+                        <?= $config['brand']['desc_p1'] ?? 'Compramos <strong>USDT</strong> al mejor tipo de cambio y realizamos transferencias <strong>SWIFT</strong> a todo el mundo.' ?>
+                    </p>
+                    <p class="text-sm sm:text-base text-slate-500">
+                        <?= $config['brand']['desc_p2'] ?? 'Desde Bolivia hacia cualquier país, con acompañamiento durante todo el proceso.' ?>
+                    </p>
+                </div>
+
+                <!-- Botones de Acción -->
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#cotizador" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-pink hover:bg-brand-roseDark text-white font-extrabold text-sm tracking-wide shadow-xl shadow-pink-500/25 flex items-center justify-center gap-2.5 transition transform hover:-translate-y-0.5">
+                        <i data-lucide="calculator" class="w-4 h-4"></i>
+                        <span>Cotizar Mi Transferencia</span>
+                        <i data-lucide="arrow-down" class="w-4 h-4 ml-1"></i>
+                    </a>
+
+                    <a href="<?= e($waSendUrl) ?>" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-bold text-sm flex items-center justify-center gap-2.5 transition shadow-sm hover:border-slate-300">
+                        <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+                        <span>Contactar por WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Métricas / Sellos rápidos de respaldo -->
+                <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-200/80 max-w-lg mx-auto lg:mx-0 text-left">
+                    <div>
+                        <span class="block text-2xl font-black text-slate-900 tracking-tight">100%</span>
+                        <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Seguro & KYC</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-black text-slate-900 tracking-tight">SWIFT</span>
+                        <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Bancos Globales</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-black text-slate-900 tracking-tight">P2P</span>
+                        <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Tasa en Tiempo Real</span>
                     </div>
                 </div>
 
-                <!-- Texto Caligráfico derecha -->
-                <div class="hidden sm:block absolute -right-4 top-20 z-20">
-                    <span class="font-script text-3xl font-bold text-slate-800 rotate-[-8deg] block leading-none">
-                        Conectamos<br>oportunidades
-                    </span>
-                </div>
             </div>
 
-            <!-- Tarjeta Flotante USDT (Cotización del día) -->
-            <a href="<?= $waQuoteUrl ?>" target="_blank" class="absolute -bottom-4 left-4 sm:left-10 z-30 bg-white/95 backdrop-blur-md border border-slate-200 rounded-2xl p-4 shadow-xl flex items-center gap-4 hover:border-brand-pink transition group">
-                <div class="w-12 h-12 rounded-full bg-[#009393] text-white flex items-center justify-center font-bold text-2xl shadow-md shrink-0">
-                    ₮
-                </div>
-                <div class="pr-2 border-r border-slate-200">
-                    <span class="text-sm font-black text-slate-900 block">USDT</span>
-                    <span class="text-[11px] text-slate-500 block leading-tight">Compramos al mejor<br>tipo de cambio</span>
-                </div>
-                <div class="pl-1">
-                    <span class="text-[10px] text-slate-400 block font-semibold">Tipo de cambio (Bs.)</span>
-                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-brand-pink transition flex items-center gap-1.5 mt-0.5">
-                        Cotización del día
-                        <i data-lucide="bar-chart-2" class="w-4 h-4 text-emerald-500"></i>
-                    </span>
-                    <span class="text-[9px] text-slate-400 mt-1 block">Consultar en vivo por WhatsApp</span>
-                </div>
-            </a>
+            <!-- Columna Derecha: Ilustración / Imagen de Marca -->
+            <div class="lg:col-span-5 relative flex justify-center items-center">
+                <div class="relative w-full max-w-md">
+                    
+                    <!-- Tarjeta flotante superior izquierda -->
+                    <div class="absolute -top-4 -left-4 sm:-left-6 z-20 bg-white/90 backdrop-blur-md border border-slate-200 shadow-xl rounded-2xl p-3 sm:p-4 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-black text-slate-900">Operación Respaldada</span>
+                            <span class="block text-[10px] text-slate-500 font-semibold">Oficinas en Bolivia</span>
+                        </div>
+                    </div>
 
-            <!-- Etiqueta El Alto Bolivia -->
-            <div class="hidden sm:block absolute -bottom-2 right-2 text-right">
-                <span class="text-xs font-black tracking-widest text-slate-800 uppercase block">EL ALTO</span>
-                <span class="text-[10px] tracking-wider text-slate-500 uppercase font-bold"><?= e($config['office']['country']) ?></span>
+                    <!-- Contenedor de la Imagen del Mundo / Gráfica -->
+                    <div class="relative z-10 rounded-3xl overflow-hidden bg-gradient-to-tr from-slate-900 via-slate-800 to-slate-900 p-8 shadow-2xl border border-slate-700/40 text-center">
+                        <img 
+                            src="assets/images/globo-red.png" 
+                            alt="Red Global de Transferencias WILVA" 
+                            class="w-full h-auto object-contain mx-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.5)] transform hover:scale-105 transition duration-500"
+                            onerror="this.src='https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=600&q=80'"
+                        >
+                        <div class="mt-4 pt-4 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-300 font-semibold">
+                            <span class="flex items-center gap-1.5">
+                                <span class="w-2 h-2 rounded-full bg-brand-pink"></span>
+                                El Alto & Cochabamba
+                            </span>
+                            <span class="text-slate-400 font-mono text-[11px]"><?= e($currentDate ?? date('d M Y')) ?></span>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta flotante inferior derecha -->
+                    <div class="absolute -bottom-5 -right-4 sm:-right-6 z-20 bg-white/95 backdrop-blur-md border border-slate-200 shadow-xl rounded-2xl p-3.5 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-pink-50 text-brand-pink flex items-center justify-center">
+                            <i data-lucide="globe-2" class="w-4 h-4"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-xs font-black text-slate-900">Transferencias Directas</span>
+                            <span class="block text-[10px] text-slate-500 font-semibold">China, USA, Europa y más</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
     </div>
-</main>
+</section>
