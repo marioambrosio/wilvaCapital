@@ -1,14 +1,16 @@
 <?php
+declare(strict_types=1);
 
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
-declare(strict_types=1);
 
 $config = require __DIR__ . '/config.php';
 
-function e(string $val): string {
-    return htmlspecialchars($val, ENT_QUOTES, 'UTF-8');
+if (!function_exists('e')) {
+    function e(?string $val): string {
+        return htmlspecialchars((string)$val, ENT_QUOTES, 'UTF-8');
+    }
 }
 
 $waSendUrl  = "https://wa.me/" . $config['whatsapp']['lapaz'] . "?text=" . urlencode($config['whatsapp']['msg_send']);
