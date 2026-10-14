@@ -1,4 +1,4 @@
-<section id="ventajas" class="py-20 bg-slate-50 border-t border-slate-200/80">
+<section id="ventajas" class="scroll-mt-24 py-20 bg-slate-50 border-t border-slate-200/80">
     <div class="max-w-7xl mx-auto px-6">
         
         <div class="text-center max-w-2xl mx-auto mb-16">

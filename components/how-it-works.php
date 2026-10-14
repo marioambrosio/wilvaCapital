@@ -1,4 +1,4 @@
-<section id="como-funciona" class="py-20 bg-slate-50 border-t border-slate-200/80">
+<section id="como-funciona" class="scroll-mt-24 py-20 bg-white border-t border-slate-200/80">
     <div class="max-w-7xl mx-auto px-6">
         
         <!-- Cabecera de Sección -->
