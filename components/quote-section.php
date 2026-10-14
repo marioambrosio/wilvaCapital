@@ -9,17 +9,17 @@
                 Calcula tu Transferencia
             </h2>
             <p class="text-slate-600 text-sm sm:text-base mt-2">
-                Consulta la tasa exacta referenciada al mercado Binance P2P con desglose transparente y costos operativos.
+                Cotización en vivo con liquidez garantizada y desglose transparente de comisiones.
             </p>
         </div>
 
         <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-lg">
             
-            <!-- Barra de Tasa Binance -->
+            <!-- Barra de Tasa P2P con Ajuste de Liquidez -->
             <div class="flex flex-wrap items-center justify-between gap-3 bg-white p-3.5 rounded-2xl border border-slate-200 mb-8">
                 <div class="flex items-center gap-2.5">
                     <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span class="text-xs font-bold text-slate-700">Tasa de Mercado (Binance P2P):</span>
+                    <span class="text-xs font-bold text-slate-700">Tipo de cambio aplicado:</span>
                     <span class="text-sm font-black text-slate-900" id="rateDisplay">1 USDT ≈ ... BOB</span>
                 </div>
                 <div class="flex items-center gap-2 text-[11px] text-slate-400 font-semibold">
@@ -69,16 +69,12 @@
             <!-- Desglose de Gastos -->
             <div class="bg-white rounded-2xl p-5 border border-slate-200 mb-8 space-y-3">
                 <div class="flex justify-between items-center text-sm">
-                    <span class="text-slate-600">Subtotal de cambio base:</span>
+                    <span class="text-slate-600">Subtotal de cambio:</span>
                     <span class="font-bold text-slate-900" id="subtotalDisplay">Bs. 0.00</span>
                 </div>
                 <div class="flex justify-between items-center text-sm">
                     <span class="text-slate-600">Comisión del servicio WILVA (2%):</span>
-                    <span class="font-semibold text-slate-800" id="feeDisplay">Bs. 0.00</span>
-                </div>
-                <div class="flex justify-between items-center text-sm">
-                    <span class="text-slate-600">Margen de cobertura y volatilidad (3%):</span>
-                    <span class="font-semibold text-brand-pink" id="marginDisplay">Bs. 0.00</span>
+                    <span class="font-semibold text-brand-pink" id="feeDisplay">Bs. 0.00</span>
                 </div>
                 <div id="swiftRow" class="flex justify-between items-center text-sm text-amber-700 bg-amber-50/60 p-2 rounded-lg border border-amber-200">
                     <span class="font-semibold flex items-center gap-1.5">
@@ -106,9 +102,9 @@
 </section>
 
 <script>
-let currentRate = 12.00;
+let currentEffectiveRate = 12.00;
 const COMMISSION_PCT = <?= (float)$config['brand']['comision'] ?>;
-const MARGIN_PCT = <?= (float)$config['brand']['margen_error'] ?>;
+const RATE_ADJUSTMENT = <?= (float)$config['brand']['rate_adjustment'] ?>; // 0.02
 const SWIFT_USD = <?= (float)$config['brand']['swift_fee_usd'] ?>;
 
 async function fetchRate() {
@@ -119,12 +115,14 @@ async function fetchRate() {
         const res = await fetch('api/get-rate.php');
         const data = await res.json();
         if (data && data.rate) {
-            currentRate = parseFloat(data.rate);
-            document.getElementById('rateDisplay').innerText = `1 USDT ≈ ${currentRate.toFixed(2)} BOB`;
+            const rawRate = parseFloat(data.rate);
+            // Suma el 0.02 al tipo de cambio directo
+            currentEffectiveRate = parseFloat((rawRate + RATE_ADJUSTMENT).toFixed(2));
+            document.getElementById('rateDisplay').innerText = `1 USDT ≈ ${currentEffectiveRate.toFixed(2)} BOB`;
             document.getElementById('rateTime').innerText = `Act: ${data.updated}`;
         }
     } catch (e) {
-        document.getElementById('rateDisplay').innerText = `1 USDT ≈ ${currentRate.toFixed(2)} BOB`;
+        document.getElementById('rateDisplay').innerText = `1 USDT ≈ ${currentEffectiveRate.toFixed(2)} BOB`;
         document.getElementById('rateTime').innerText = `Modo referencia`;
     } finally {
         if (refreshIcon) refreshIcon.classList.remove('animate-spin');
@@ -135,33 +133,31 @@ async function fetchRate() {
 function calcularTotales() {
     const usd = parseFloat(document.getElementById('inputUsd').value) || 0;
     const destino = document.getElementById('selectDestino').value;
-    const subtotalBob = usd * currentRate;
+    const subtotalBob = usd * currentEffectiveRate;
 
     const feeBob = subtotalBob * COMMISSION_PCT;
-    const marginBob = subtotalBob * MARGIN_PCT;
 
     let swiftCostBob = 0;
     const swiftRow = document.getElementById('swiftRow');
     if (destino === 'SWIFT' && usd > 0) {
-        swiftCostBob = SWIFT_USD * currentRate;
+        swiftCostBob = SWIFT_USD * currentEffectiveRate;
         swiftRow.classList.remove('hidden');
     } else {
         swiftRow.classList.add('hidden');
     }
 
-    const totalBob = subtotalBob + feeBob + marginBob + swiftCostBob;
+    const totalBob = subtotalBob + feeBob + swiftCostBob;
 
     document.getElementById('inputBob').value = subtotalBob > 0 ? subtotalBob.toFixed(2) : '';
     document.getElementById('subtotalDisplay').innerText = `Bs. ${subtotalBob.toLocaleString('es-BO', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
     document.getElementById('feeDisplay').innerText = `Bs. ${feeBob.toLocaleString('es-BO', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
-    document.getElementById('marginDisplay').innerText = `Bs. ${marginBob.toLocaleString('es-BO', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
     document.getElementById('swiftDisplay').innerText = `Bs. ${swiftCostBob.toLocaleString('es-BO', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
     document.getElementById('totalDisplay').innerText = `Bs. ${totalBob.toLocaleString('es-BO', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 }
 
 function calcularDesdeBob() {
     const bob = parseFloat(document.getElementById('inputBob').value) || 0;
-    const usd = bob > 0 ? (bob / currentRate) : 0;
+    const usd = bob > 0 ? (bob / currentEffectiveRate) : 0;
     document.getElementById('inputUsd').value = usd > 0 ? usd.toFixed(2) : '';
     calcularTotales();
 }
@@ -173,7 +169,7 @@ function contactarOperacionWhatsApp() {
     const phone = "<?= e($config['whatsapp']['lapaz']) ?>";
     
     let detalleSwift = destino === 'SWIFT' ? ' (Incluye certificado SWIFT de 80 USD)' : '';
-    const msg = `Hola WILVA CAPITAL, coticé en su web:\n• Modalidad: ${destino}${detalleSwift}\n• Enviar al exterior: ${usd} USD\n• Total a entregar: ${totalBob}\n• Tasa de referencia: ${currentRate.toFixed(2)} Bs.\n¿Podemos coordinar la operación?`;
+    const msg = `Hola WILVA CAPITAL, coticé en su web:\n• Modalidad: ${destino}${detalleSwift}\n• Enviar al exterior: ${usd} USD\n• Total a entregar: ${totalBob}\n• Tasa aplicada: ${currentEffectiveRate.toFixed(2)} Bs.\n¿Podemos coordinar la operación?`;
 
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
 }
