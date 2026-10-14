@@ -12,7 +12,8 @@ function e(string $val): string {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco Legal y Términos de Servicio | <?= e($config['brand']['name']) ?></title>
+    <title>Marco Legal y Términos y Condiciones | <?= e($config['brand']['name']) ?></title>
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +66,7 @@ function e(string $val): string {
             <!-- Índice lateral -->
             <aside class="md:col-span-1 space-y-2 sticky top-24 self-start text-xs font-bold">
                 <a href="#terms" class="block p-3 rounded-xl bg-white border border-slate-200 text-slate-700 hover:border-brand-pink hover:text-brand-pink transition shadow-sm">
-                    1. Terms of Service
+                    1. Términos y condiciones
                 </a>
                 <a href="#risks" class="block p-3 rounded-xl bg-white border border-slate-200 text-slate-700 hover:border-brand-pink hover:text-brand-pink transition shadow-sm">
                     2. Risk Disclosure
@@ -81,49 +82,49 @@ function e(string $val): string {
             <!-- Textos Legales Detallados -->
             <div class="md:col-span-3 space-y-10">
                 
-                <!-- 1. TERMS OF SERVICE -->
+                <!-- 1. TÉRMINOS Y CONDICIONES -->
                 <section id="terms" class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
-                        <h2 class="text-xl font-black text-slate-950">1. Terms of Service</h2>
-                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">Draft for Review</span>
+                        <h2 class="text-xl font-black text-slate-950">1. Términos y condiciones</h2>
+                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">Borrador para revisión</span>
                     </div>
 
                     <div class="space-y-5 text-sm text-slate-600 leading-relaxed">
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">1. Scope</strong>
-                            <p>These proposed terms concern website use and requests for services advertised by WILVA CAPITAL, the trade name of WILVA CAPITAL DE WILSON CHOQUE URUÑO (sole proprietorship, Bolivia). They must be approved before becoming binding customer terms.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">1. Alcance</strong>
+                            <p>Estos términos describen el uso del sitio web y las solicitudes de los servicios anunciados por WILVA CAPITAL, nombre comercial de WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia). Este texto es un borrador y debe revisarse y aprobarse antes de utilizarse como condiciones definitivas para clientes.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">2. Services</strong>
-                            <p>The website advertises cross-border payments, international SWIFT-related transfers, USDT-related transactions and currency conversion quotations. Service availability depends on destination, transaction eligibility, third-party participation and applicable law.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">2. Servicios</strong>
+                            <p>El sitio web anuncia pagos transfronterizos, transferencias internacionales relacionadas con SWIFT, operaciones relacionadas con USDT y cotizaciones de cambio de moneda. La disponibilidad depende del destino, la elegibilidad de la operación, la participación de terceros y la normativa aplicable.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">3. Customer Information</strong>
-                            <p>Customers must provide complete, accurate instructions and information they are authorized to use, including recipient bank or wallet details. Identity and transaction documentation may be requested.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">3. Información del cliente</strong>
+                            <p>El cliente debe proporcionar instrucciones completas y exactas, así como información cuyo uso esté autorizado, incluidos los datos bancarios o de la billetera del destinatario. Se podrán solicitar documentos de identidad y respaldos de la operación.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">4. Quotes and Fees</strong>
-                            <p>Exchange rates and availability may change. A quote is not a completed transaction. The website advertises a 2% service commission; the applicable calculation, other charges, exchange rate and amount to be received must be disclosed and agreed before proceeding.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">4. Cotizaciones y cargos</strong>
+                            <p>Los tipos de cambio y la disponibilidad pueden variar. Una cotización no constituye una operación completada. El sitio anuncia una comisión de servicio del 2%; antes de proceder, se deberán informar y acordar su cálculo aplicable, los demás cargos, el tipo de cambio y el importe que recibirá el destinatario.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">5. Timing</strong>
-                            <p>The website describes USDT confirmations as potentially taking minutes following approval and SWIFT transfers as generally taking 24–72 business hours. These are estimates, not guarantees. Banking reviews, network congestion, intermediary actions, holidays and incorrect instructions can cause delays.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">5. Plazos</strong>
+                            <p>El sitio indica que las confirmaciones de USDT podrían tomar minutos después de su aprobación y que las transferencias SWIFT suelen demorar entre 24 y 72 horas hábiles. Son estimaciones, no garantías. Las revisiones bancarias, la congestión de la red, las acciones de intermediarios, los feriados y las instrucciones incorrectas pueden ocasionar demoras.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">6. Execution, Cancellation and Refunds</strong>
-                            <p>Transactions should be executed only after customer confirmation through an authorized channel. A completed blockchain transfer may be irreversible; bank transfer recalls may depend on third parties.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">6. Ejecución, cancelación y reembolsos</strong>
+                            <p>Las operaciones solo deben ejecutarse después de la confirmación del cliente a través de un canal autorizado. Una transferencia completada en blockchain puede ser irreversible; la revocación de una transferencia bancaria puede depender de terceros.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">7. Risks and Responsibilities</strong>
-                            <p>Cross-border transfers involve exchange-rate, counterparty, banking, network, technical and digital-asset risks. Customers must not request unlawful transactions. Neither these terms nor any limitation of responsibility overrides mandatory customer rights.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">7. Riesgos y responsabilidades</strong>
+                            <p>Las transferencias transfronterizas implican riesgos relacionados con el tipo de cambio, las contrapartes, los bancos, las redes, la tecnología y los activos digitales. El cliente no debe solicitar operaciones ilícitas. Estas condiciones y cualquier limitación de responsabilidad no sustituyen los derechos irrenunciables que establezca la normativa aplicable.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">8. Complaints and Disputes</strong>
-                            <p>Questions and complaints: <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">8. Consultas y reclamos</strong>
+                            <p>Las consultas y los reclamos pueden enviarse a <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">9. Changes and Contact</strong>
-                            <p>Approved terms may be updated with notice where required. WILVA CAPITAL DE WILSON CHOQUE URUÑO (sole proprietorship, Bolivia). Website: https://wilvacapital.com.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">9. Modificaciones y contacto</strong>
+                            <p>Los términos aprobados podrán actualizarse y notificarse cuando corresponda. WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia). Sitio web: https://wilvacapital.com.</p>
                         </div>
                     </div>
                 </section>

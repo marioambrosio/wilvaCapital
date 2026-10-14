@@ -3,9 +3,7 @@
         
         <!-- Logo -->
         <a href="#inicio" class="flex items-center gap-3 group">
-            <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white font-black text-xl tracking-tighter group-hover:bg-brand-pink transition">
-                W
-            </div>
+            <img src="assets/images/logo.jpeg" alt="<?= e($config['brand']['name']) ?>" class="w-14 h-10 rounded-xl object-contain">
             <div>
                 <span class="block font-black text-slate-900 text-lg leading-tight tracking-tight">
                     <?= e($config['brand']['name']) ?>

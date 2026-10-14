@@ -1,4 +1,4 @@
-<section class="border-t border-b border-slate-200 bg-white py-6" id="ventajas">
+<section class="border-t border-b border-slate-200 bg-white py-6">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 items-center">
         
         <div class="flex items-center gap-3.5">
@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div class="flex items-center gap-3.5 lg:border-l lg:pl-6 border-slate-200" id="oficinas">
+        <div class="flex items-center gap-3.5 lg:border-l lg:pl-6 border-slate-200">
             <div class="w-10 h-10 rounded-full bg-pink-50 text-brand-pink flex items-center justify-center shrink-0">
                 <i data-lucide="map-pin" class="w-5 h-5"></i>
             </div>

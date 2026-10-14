@@ -18,7 +18,7 @@
                 </div>
             </div>
             <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">
-                Borrador
+                
             </span>
         </div>
 

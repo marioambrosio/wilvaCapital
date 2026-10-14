@@ -23,6 +23,7 @@ $currentDate = date('d M Y - H:i');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= e($config['brand']['name']) ?> | <?= e($config['brand']['sub']) ?></title>
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -54,8 +55,6 @@ $currentDate = date('d M Y - H:i');
       }
     </script>
 </head>
-<div class="h-[600px]"></div>
-
 <body class="bg-white text-slate-900 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-pink selection:text-white">
 
     <!-- Modal legal obligatorio al entrar -->
