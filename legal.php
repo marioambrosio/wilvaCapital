@@ -86,7 +86,7 @@ function e(string $val): string {
                 <section id="terms" class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
                         <h2 class="text-xl font-black text-slate-950">1. Términos y condiciones</h2>
-                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">Borrador para revisión</span>
+                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md"></span>
                     </div>
 
                     <div class="space-y-5 text-sm text-slate-600 leading-relaxed">

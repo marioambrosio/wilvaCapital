@@ -39,7 +39,7 @@
                             ¿Tienes un Código de Referido o Cliente?
                         </label>
                         <div class="relative">
-                            <input type="text" id="inputCodigo" placeholder="Ej: PROMOCION01, ALIBABA..." class="w-full uppercase tracking-wider font-bold text-slate-800 text-sm bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 focus:outline-none focus:border-brand-pink transition">
+                            <input type="text" id="inputCodigo" placeholder="código de referido o cliente" class="w-full uppercase tracking-wider font-bold text-slate-800 text-sm bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 focus:outline-none focus:border-brand-pink transition">
                         </div>
                     </div>
                     <div class="flex-1 sm:text-right" id="badgeContainer">
@@ -107,6 +107,10 @@
                 <div class="flex justify-between items-center text-base pt-3 border-t border-slate-100">
                     <span class="font-extrabold text-slate-900">Total a entregar en oficina:</span>
                     <span class="font-black text-2xl text-slate-950" id="totalDisplay">Bs. 0.00</span>
+                </div>
+                <div class="flex justify-between items-center text-sm">
+                    <span class="font-semibold text-slate-600">Total equivalente en dólares:</span>
+                    <span class="font-bold text-slate-900" id="totalUsdDisplay">$0.00 USD</span>
                 </div>
             </div>
 
@@ -221,11 +225,13 @@ function calcularTotales() {
     }
 
     const totalBob = subtotalBob + feeBob + swiftCostBob;
+    const totalUsd = currentEffectiveRate > 0 ? totalBob / currentEffectiveRate : 0;
 
     document.getElementById('inputBob').value = subtotalBob > 0 ? subtotalBob.toFixed(2) : '';
     document.getElementById('subtotalDisplay').innerText = `Bs. ${subtotalBob.toLocaleString('es-BO', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
     document.getElementById('feeDisplay').innerText = `Bs. ${feeBob.toLocaleString('es-BO', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
     document.getElementById('totalDisplay').innerText = `Bs. ${totalBob.toLocaleString('es-BO', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    document.getElementById('totalUsdDisplay').innerText = `$${totalUsd.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})} USD`;
     
     if (window.lucide) lucide.createIcons();
 }
@@ -240,6 +246,7 @@ function calcularDesdeBob() {
 function contactarOperacionWhatsApp() {
     const usd = document.getElementById('inputUsd').value || '0';
     const totalBob = document.getElementById('totalDisplay').innerText;
+    const totalUsd = document.getElementById('totalUsdDisplay').innerText;
     const destino = document.getElementById('selectDestino').value;
     const phone = "<?= e($config['whatsapp']['lapaz']) ?>";
     
@@ -252,7 +259,7 @@ function contactarOperacionWhatsApp() {
 
     let detalleCodigo = appliedCodeKey ? `\n• Código Aplicado: ${appliedCodeKey} (${(activeCommission * 100).toFixed(1)}% com.)` : '';
 
-    const msg = `Hola WILVA CAPITAL, coticé en su web:\n• Modalidad: ${destino}${detalleSwift}${detalleCodigo}\n• Enviar al exterior: ${usd} USD\n• Total a entregar: ${totalBob}\n• Tasa aplicada: ${currentEffectiveRate.toFixed(2)} Bs.\n¿Podemos coordinar la operación?`;
+    const msg = `Hola WILVA CAPITAL, coticé en su web:\n• Modalidad: ${destino}${detalleSwift}${detalleCodigo}\n• Enviar al exterior: ${usd} USD\n• Total a entregar: ${totalBob}\n• Total equivalente: ${totalUsd}\n• Tasa aplicada: ${currentEffectiveRate.toFixed(2)} Bs.\n¿Podemos coordinar la operación?`;
 
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
 }
