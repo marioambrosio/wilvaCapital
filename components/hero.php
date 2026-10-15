@@ -86,12 +86,17 @@
 
                     <!-- Contenedor de la Imagen del Mundo / Gráfica -->
                     <div class="relative z-10 rounded-3xl overflow-hidden bg-gradient-to-tr from-slate-900 via-slate-800 to-slate-900 p-8 shadow-2xl border border-slate-700/40 text-center">
-                        <img 
-                            src="assets/images/globo-red.png" 
-                            alt="Red Global de Transferencias WILVA" 
+                        <video
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            aria-label="Animación del mundo que representa la red global de transferencias WILVA"
                             class="w-full h-auto object-contain mx-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.5)] transform hover:scale-105 transition duration-500"
-                            onerror="this.src='https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=600&q=80'"
                         >
+                            <source src="assets/images/mundo.mp4" type="video/mp4">
+                            Tu navegador no puede reproducir este video.
+                        </video>
                         <div class="mt-4 pt-4 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-300 font-semibold">
                             <span class="flex items-center gap-1.5">
                                 <span class="w-2 h-2 rounded-full bg-brand-pink"></span>
