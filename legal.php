@@ -91,7 +91,7 @@ function e(string $val): string {
                     <div class="space-y-5 text-sm text-slate-600 leading-relaxed">
                         <div>
                             <strong class="text-slate-900 block font-bold mb-1">1. Alcance</strong>
-                            <p>Estos términos describen el uso del sitio web y las solicitudes de los servicios anunciados por WILVA CAPITAL, nombre comercial de WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia). Este texto es un borrador y debe revisarse y aprobarse antes de utilizarse como condiciones definitivas para clientes.</p>
+                            <p>Estos términos regulan el uso del sitio web y las solicitudes de los servicios anunciados por WILVA CAPITAL, nombre comercial de WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia).</p>
                         </div>
                         <div>
                             <strong class="text-slate-900 block font-bold mb-1">2. Servicios</strong>
@@ -123,7 +123,7 @@ function e(string $val): string {
                         </div>
                         <div>
                             <strong class="text-slate-900 block font-bold mb-1">9. Modificaciones y contacto</strong>
-                            <p>Los términos aprobados podrán actualizarse y notificarse cuando corresponda. WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia). Sitio web: https://wilvacapital.com.</p>
+                            <p>Estos términos podrán actualizarse y notificarse cuando corresponda. WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia). Sitio web: https://wilvacapital.com.</p>
                         </div>
                     </div>
                 </section>
@@ -205,7 +205,7 @@ function e(string $val): string {
                     <div class="space-y-5 text-sm text-slate-600 leading-relaxed">
                         <div>
                             <strong class="text-slate-900 block font-bold mb-1">1. Finalidad</strong>
-                            <p>WILVA CAPITAL reconoce la importancia de prevenir el fraude, el lavado de dinero y el uso indebido de los servicios de pagos transfronterizos. El sitio web hace referencia a verificaciones KYC/KYB (conocimiento del cliente y de la empresa). Este borrador no certifica que ya se haya implementado un control específico.</p>
+                            <p>WILVA CAPITAL reconoce la importancia de prevenir el fraude, el lavado de dinero y el uso indebido de los servicios de pagos transfronterizos. Para ello, se realizan verificaciones KYC/KYB (conocimiento del cliente y de la empresa) conforme a las obligaciones aplicables.</p>
                         </div>
                         <div>
                             <strong class="text-slate-900 block font-bold mb-1">2. Información del cliente y de la empresa</strong>
@@ -217,7 +217,7 @@ function e(string $val): string {
                         </div>
                         <div>
                             <strong class="text-slate-900 block font-bold mb-1">4. Privacidad y contacto</strong>
-                            <p>La información personal obtenida para fines de verificación debe tratarse de acuerdo con la Política de privacidad aprobada y la normativa aplicable. Contacto: <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
+                            <p>La información personal obtenida para fines de verificación debe tratarse de acuerdo con la Política de privacidad y la normativa aplicable. Contacto: <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
                         </div>
                     </div>
                 </section>

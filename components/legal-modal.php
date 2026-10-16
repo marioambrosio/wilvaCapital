@@ -41,7 +41,7 @@
             <!-- Pestaña 1: Términos -->
             <div id="content-terms" class="space-y-3">
                 <p class="font-bold text-slate-900">TÉRMINOS Y CONDICIONES</p>
-                <p><strong>1. Alcance:</strong> Estos términos propuestos se refieren al uso del sitio web y a las solicitudes de los servicios anunciados por WILVA CAPITAL, nombre comercial de WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia). Deben revisarse y aprobarse antes de utilizarse como condiciones vinculantes para los clientes.</p>
+                <p><strong>1. Alcance:</strong> Estos términos regulan el uso del sitio web y las solicitudes de los servicios anunciados por WILVA CAPITAL, nombre comercial de WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia).</p>
                 <p><strong>2. Servicios:</strong> El sitio web anuncia pagos transfronterizos, transferencias internacionales relacionadas con SWIFT, operaciones relacionadas con USDT y cotizaciones de cambio de moneda. La disponibilidad depende del destino, la elegibilidad de la operación, la participación de terceros y la normativa aplicable.</p>
                 <p><strong>3. Información del cliente:</strong> Los clientes deben proporcionar instrucciones completas y exactas, así como información cuyo uso estén autorizados a realizar, incluidos los datos bancarios o de la billetera del destinatario.</p>
                 <p><strong>4. Cotizaciones y cargos:</strong> Los tipos de cambio y la disponibilidad pueden variar. Una cotización no constituye una operación completada. El sitio anuncia una comisión de servicio del 2%; antes de proceder, deben informarse y acordarse los demás cargos, el tipo de cambio y el importe que recibirá el destinatario.</p>
