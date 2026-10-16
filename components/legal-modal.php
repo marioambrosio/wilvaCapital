@@ -17,9 +17,6 @@
                     </p>
                 </div>
             </div>
-            <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">
-                Borrador para revisión
-            </span>
         </div>
 
         <!-- Pestañas de Navegación Rápida -->
@@ -43,7 +40,7 @@
             
             <!-- Pestaña 1: Términos -->
             <div id="content-terms" class="space-y-3">
-                <p class="font-bold text-slate-900">TÉRMINOS Y CONDICIONES (BORRADOR PARA REVISIÓN)</p>
+                <p class="font-bold text-slate-900">TÉRMINOS Y CONDICIONES</p>
                 <p><strong>1. Alcance:</strong> Estos términos propuestos se refieren al uso del sitio web y a las solicitudes de los servicios anunciados por WILVA CAPITAL, nombre comercial de WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia). Deben revisarse y aprobarse antes de utilizarse como condiciones vinculantes para los clientes.</p>
                 <p><strong>2. Servicios:</strong> El sitio web anuncia pagos transfronterizos, transferencias internacionales relacionadas con SWIFT, operaciones relacionadas con USDT y cotizaciones de cambio de moneda. La disponibilidad depende del destino, la elegibilidad de la operación, la participación de terceros y la normativa aplicable.</p>
                 <p><strong>3. Información del cliente:</strong> Los clientes deben proporcionar instrucciones completas y exactas, así como información cuyo uso estén autorizados a realizar, incluidos los datos bancarios o de la billetera del destinatario.</p>
@@ -54,7 +51,7 @@
 
             <!-- Pestaña 2: Riesgos -->
             <div id="content-risks" class="hidden space-y-3">
-                <p class="font-bold text-slate-900">DIVULGACIÓN DE RIESGOS (BORRADOR PARA REVISIÓN)</p>
+                <p class="font-bold text-slate-900">DIVULGACIÓN DE RIESGOS</p>
                 <p><strong>1. Descripción general:</strong> Los pagos transfronterizos, las operaciones de cambio de divisas y las transferencias de activos digitales conllevan riesgos financieros y operativos.</p>
                 <p><strong>2. Tipos de cambio:</strong> Los tipos de cambio pueden variar antes de que se acepte una cotización. Los cargos de intermediarios terceros pueden afectar el importe final recibido.</p>
                 <p><strong>3. USDT y blockchain:</strong> La liquidez de mercado y el reembolso de USDT no están garantizados. Las transferencias a direcciones de billetera incorrectas o a redes incompatibles no pueden revertirse.</p>
@@ -63,7 +60,7 @@
 
             <!-- Pestaña 3: Privacidad -->
             <div id="content-privacy" class="hidden space-y-3">
-                <p class="font-bold text-slate-900">POLÍTICA DE PRIVACIDAD (BORRADOR PARA REVISIÓN)</p>
+                <p class="font-bold text-slate-900">POLÍTICA DE PRIVACIDAD</p>
                 <p><strong>1. Tratamiento:</strong> Recopilamos y tratamos documentos de identidad, datos de contacto, datos de cuentas o billeteras de destino y detalles de las operaciones para fines de cumplimiento, preparación de cotizaciones y ejecución de los servicios solicitados.</p>
                 <p><strong>2. Comunicación de datos:</strong> Los datos podrán transmitirse a contrapartes, bancos o plataformas autorizadas únicamente para realizar las operaciones de pago transfronterizo solicitadas.</p>
                 <p><strong>3. Contacto:</strong> Para consultas sobre datos personales, escribe a <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
@@ -71,7 +68,7 @@
 
             <!-- Pestaña 4: KYC/KYB -->
             <div id="content-kyc" class="hidden space-y-3">
-                <p class="font-bold text-slate-900">VERIFICACIÓN DE CLIENTES Y PREVENCIÓN DE DELITOS FINANCIEROS (BORRADOR PARA REVISIÓN)</p>
+                <p class="font-bold text-slate-900">VERIFICACIÓN DE CLIENTES Y PREVENCIÓN DE DELITOS FINANCIEROS</p>
                 <p><strong>1. Finalidad:</strong> De acuerdo con los estándares de prevención de delitos financieros, antes de procesar operaciones se requieren verificaciones de identidad de clientes (KYC) y verificaciones de empresas (KYB).</p>
                 <p><strong>2. Documentación:</strong> Se podrán solicitar documentos de identidad (C.I. o pasaporte), NIT y documentación que respalde el origen de los fondos.</p>
             </div>
