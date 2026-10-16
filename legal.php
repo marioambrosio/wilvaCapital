@@ -44,7 +44,7 @@ function e(string $val): string {
                 <i data-lucide="arrow-left" class="w-4 h-4"></i>
                 <span>Volver a WILVA CAPITAL</span>
             </a>
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Compliance & Legal</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Cumplimiento y marco legal</span>
         </div>
     </header>
 
@@ -69,13 +69,13 @@ function e(string $val): string {
                     1. Términos y condiciones
                 </a>
                 <a href="#risks" class="block p-3 rounded-xl bg-white border border-slate-200 text-slate-700 hover:border-brand-pink hover:text-brand-pink transition shadow-sm">
-                    2. Risk Disclosure
+                    2. Divulgación de riesgos
                 </a>
                 <a href="#privacy" class="block p-3 rounded-xl bg-white border border-slate-200 text-slate-700 hover:border-brand-pink hover:text-brand-pink transition shadow-sm">
-                    3. Privacy Policy
+                    3. Política de privacidad
                 </a>
                 <a href="#aml" class="block p-3 rounded-xl bg-white border border-slate-200 text-slate-700 hover:border-brand-pink hover:text-brand-pink transition shadow-sm">
-                    4. KYC / AML Statement
+                    4. Verificación de clientes y prevención de delitos financieros
                 </a>
             </aside>
 
@@ -86,7 +86,7 @@ function e(string $val): string {
                 <section id="terms" class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
                         <h2 class="text-xl font-black text-slate-950">1. Términos y condiciones</h2>
-                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md"></span>
+                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">Borrador para revisión</span>
                     </div>
 
                     <div class="space-y-5 text-sm text-slate-600 leading-relaxed">
@@ -129,99 +129,99 @@ function e(string $val): string {
                     </div>
                 </section>
 
-                <!-- 2. RISK DISCLOSURE STATEMENT -->
+                <!-- 2. DIVULGACIÓN DE RIESGOS -->
                 <section id="risks" class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
-                        <h2 class="text-xl font-black text-slate-950">2. Risk Disclosure Statement</h2>
-                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">Draft for Review</span>
+                        <h2 class="text-xl font-black text-slate-950">2. Divulgación de riesgos</h2>
+                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">Borrador para revisión</span>
                     </div>
 
                     <div class="space-y-5 text-sm text-slate-600 leading-relaxed">
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">1. Overview</strong>
-                            <p>Cross-border payments, foreign exchange and digital-asset transfers carry financial and operational risks. Read the confirmed transaction terms before proceeding.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">1. Descripción general</strong>
+                            <p>Los pagos transfronterizos, las operaciones de cambio de divisas y las transferencias de activos digitales conllevan riesgos financieros y operativos. Lee y confirma las condiciones de cada operación antes de continuar.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">2. Exchange Rates and Fees</strong>
-                            <p>Exchange rates may change before a quote is accepted. Third-party charges can affect the amount ultimately received.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">2. Tipos de cambio y cargos</strong>
+                            <p>Los tipos de cambio pueden variar antes de que se acepte una cotización. Los cargos de terceros pueden afectar el importe final recibido.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">3. USDT and Blockchain</strong>
-                            <p>USDT is designed to reference the US dollar but its market value, liquidity and redemption are not guaranteed. Transfers can be irreversible and may fail or be lost through wrong wallet addresses, incompatible networks or technical incidents.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">3. USDT y blockchain</strong>
+                            <p>USDT está diseñado para mantener una referencia al dólar estadounidense, pero su valor de mercado, liquidez y posibilidad de reembolso no están garantizados. Las transferencias pueden ser irreversibles y fallar o perderse si se utilizan direcciones de billetera incorrectas, redes incompatibles o si ocurren incidentes técnicos.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">4. Banks and Counterparties</strong>
-                            <p>SWIFT-related transfers can be delayed, returned, rejected or reviewed by banks and intermediaries. External platforms and counterparties may experience failures or restrictions.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">4. Bancos y contrapartes</strong>
+                            <p>Las transferencias relacionadas con SWIFT pueden sufrir demoras, devoluciones, rechazos o revisiones por parte de bancos e intermediarios. Las plataformas externas y las contrapartes pueden experimentar fallas o restricciones.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">5. Legal and Transaction Risks</strong>
-                            <p>Payment requests may be subject to identification, information requests and restrictions under applicable law.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">5. Riesgos legales y de la operación</strong>
+                            <p>Las solicitudes de pago pueden estar sujetas a verificaciones de identidad, solicitudes de información y restricciones conforme a la normativa aplicable.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">6. Contact</strong>
-                            <p>WILVA CAPITAL DE WILSON CHOQUE URUÑO (sole proprietorship, Bolivia). <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">6. Contacto</strong>
+                            <p>WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia). <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
                         </div>
                     </div>
                 </section>
 
-                <!-- 3. PRIVACY POLICY -->
+                <!-- 3. POLÍTICA DE PRIVACIDAD -->
                 <section id="privacy" class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
-                        <h2 class="text-xl font-black text-slate-950">3. Privacy Policy</h2>
-                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">Draft for Review</span>
+                        <h2 class="text-xl font-black text-slate-950">3. Política de privacidad</h2>
+                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">Borrador para revisión</span>
                     </div>
 
                     <div class="space-y-5 text-sm text-slate-600 leading-relaxed">
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">1. Who We Are</strong>
-                            <p>WILVA CAPITAL is the trade name of WILVA CAPITAL DE WILSON CHOQUE URUÑO (sole proprietorship, Bolivia) ("we", "us"). This notice describes the handling of personal information associated with inquiries and cross-border payment services offered through wilvacapital.com.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">1. Quiénes somos</strong>
+                            <p>WILVA CAPITAL es el nombre comercial de WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia; en adelante, «WILVA CAPITAL» o «nosotros»). Este aviso describe el tratamiento de información personal relacionada con consultas y servicios de pagos transfronterizos ofrecidos a través de wilvacapital.com.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">2. Information We May Process</strong>
-                            <p>Depending on the requested service, information may include names, contact details, identification documents, business registration and ownership details, payment instructions, bank or wallet addresses, sender and beneficiary information, transaction amounts, purpose and source-of-funds documents, and website technical information.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">2. Información que podemos tratar</strong>
+                            <p>Según el servicio solicitado, la información puede incluir nombres, datos de contacto, documentos de identidad, datos de registro y titularidad de empresas, instrucciones de pago, datos bancarios o direcciones de billeteras, información del remitente y del beneficiario, importes y finalidad de las operaciones, documentos sobre el origen de los fondos e información técnica del sitio web.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">3. Why We Process Information</strong>
-                            <p>We may use relevant information to respond to inquiries, prepare quotes, assess and execute requested transactions, verify identity, detect fraud, handle disputes, maintain records and meet applicable legal obligations.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">3. Finalidad del tratamiento</strong>
+                            <p>Podemos utilizar la información pertinente para responder consultas, preparar cotizaciones, evaluar y ejecutar las operaciones solicitadas, verificar identidades, detectar fraudes, atender controversias, mantener registros y cumplir las obligaciones legales aplicables.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">4. Sharing and Cross-Border Processing</strong>
-                            <p>Information may need to be shared with transaction banks, payment intermediaries, digital-asset platforms, verification vendors, technical providers or authorities where necessary and lawful. International payments can require processing outside Bolivia.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">4. Comunicación y tratamiento transfronterizo</strong>
+                            <p>Cuando sea necesario y lícito, la información podrá compartirse con bancos que intervengan en la operación, intermediarios de pago, plataformas de activos digitales, proveedores de verificación o servicios tecnológicos, y autoridades competentes. Los pagos internacionales pueden requerir el tratamiento de información fuera de Bolivia.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">5. Security and Retention</strong>
-                            <p>We seek to use safeguards appropriate to the sensitivity of the information. No transmission method is completely secure. Information should be retained only as long as necessary for legitimate purposes or legal requirements.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">5. Seguridad y conservación</strong>
+                            <p>Procuramos aplicar medidas de protección adecuadas a la sensibilidad de la información. Ningún método de transmisión es completamente seguro. La información debe conservarse solo durante el tiempo necesario para fines legítimos o para cumplir requisitos legales.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">6. Your Requests</strong>
-                            <p>To inquire about your information or request access, correction or deletion where applicable, email <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">6. Consultas y solicitudes</strong>
+                            <p>Para consultar sobre tu información o solicitar su acceso, rectificación o eliminación cuando corresponda, escribe a <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
                         </div>
                     </div>
                 </section>
 
-                <!-- 4. CUSTOMER VERIFICATION AND AML -->
+                <!-- 4. VERIFICACIÓN DE CLIENTES Y PREVENCIÓN DE DELITOS FINANCIEROS -->
                 <section id="aml" class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
-                        <h2 class="text-xl font-black text-slate-950">4. Customer Verification & Financial Crime Statement</h2>
-                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">Draft for Review</span>
+                        <h2 class="text-xl font-black text-slate-950">4. Verificación de clientes y prevención de delitos financieros</h2>
+                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">Borrador para revisión</span>
                     </div>
 
                     <div class="space-y-5 text-sm text-slate-600 leading-relaxed">
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">1. Purpose</strong>
-                            <p>WILVA CAPITAL recognizes the importance of preventing fraud, money laundering and misuse of cross-border payment services. The website refers to KYC/KYB checks. This draft does not certify that any specific control is already implemented.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">1. Finalidad</strong>
+                            <p>WILVA CAPITAL reconoce la importancia de prevenir el fraude, el lavado de dinero y el uso indebido de los servicios de pagos transfronterizos. El sitio web hace referencia a verificaciones KYC/KYB (conocimiento del cliente y de la empresa). Este borrador no certifica que ya se haya implementado un control específico.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">2. Customer and Business Information</strong>
-                            <p>Depending on the service and applicable obligations, identity, company registration, beneficial ownership, beneficiary and transaction-purpose information may be requested.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">2. Información del cliente y de la empresa</strong>
+                            <p>Según el servicio y las obligaciones aplicables, se podrá solicitar información sobre identidad, registro de la empresa, titularidad real, beneficiarios y finalidad de la operación.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">3. Transaction Review</strong>
-                            <p>Some transactions may require additional supporting documents or review. Suspected unlawful activity must be handled according to applicable obligations.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">3. Revisión de operaciones</strong>
+                            <p>Algunas operaciones pueden requerir documentos de respaldo o revisiones adicionales. Las sospechas de actividad ilícita deben tratarse de acuerdo con las obligaciones aplicables.</p>
                         </div>
                         <div>
-                            <strong class="text-slate-900 block font-bold mb-1">4. Privacy and Contact</strong>
-                            <p>Personal information obtained for verification should be handled in accordance with the approved Privacy Policy and applicable law. Contact: <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
+                            <strong class="text-slate-900 block font-bold mb-1">4. Privacidad y contacto</strong>
+                            <p>La información personal obtenida para fines de verificación debe tratarse de acuerdo con la Política de privacidad aprobada y la normativa aplicable. Contacto: <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
                         </div>
                     </div>
                 </section>

@@ -18,7 +18,7 @@
                 </div>
             </div>
             <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-amber-100 text-amber-800 rounded-md">
-                
+                Borrador para revisión
             </span>
         </div>
 
@@ -41,39 +41,39 @@
         <!-- Área de Contenido con Scroll -->
         <div class="p-6 overflow-y-auto space-y-4 text-xs leading-relaxed text-slate-600 flex-1">
             
-            <!-- Tab 1: Terms -->
+            <!-- Pestaña 1: Términos -->
             <div id="content-terms" class="space-y-3">
-                <p class="font-bold text-slate-900">TERMS OF SERVICE (DRAFT FOR REVIEW)</p>
-                <p><strong>1. Scope:</strong> These proposed terms concern website use and requests for services advertised by WILVA CAPITAL, the trade name of WILVA CAPITAL DE WILSON CHOQUE URUÑO (sole proprietorship, Bolivia). They must be approved before becoming binding customer terms.</p>
-                <p><strong>2. Services:</strong> The website advertises cross-border payments, international SWIFT-related transfers, USDT-related transactions and currency conversion quotations. Service availability depends on destination, transaction eligibility, third-party participation and applicable law.</p>
-                <p><strong>3. Customer Information:</strong> Customers must provide complete, accurate instructions and information they are authorized to use, including recipient bank or wallet details.</p>
-                <p><strong>4. Quotes and Fees:</strong> Exchange rates and availability may change. A quote is not a completed transaction. The website advertises a 2% service commission; other charges, exchange rate and amount to be received must be disclosed and agreed before proceeding.</p>
-                <p><strong>5. Timing:</strong> USDT confirmations potentially take minutes following approval; SWIFT transfers generally take 24–72 business hours. Delays can occur due to banking reviews or intermediary actions.</p>
-                <p><strong>6. Execution & Cancellation:</strong> Blockchain transfers may be irreversible; bank transfer recalls depend on third parties.</p>
+                <p class="font-bold text-slate-900">TÉRMINOS Y CONDICIONES (BORRADOR PARA REVISIÓN)</p>
+                <p><strong>1. Alcance:</strong> Estos términos propuestos se refieren al uso del sitio web y a las solicitudes de los servicios anunciados por WILVA CAPITAL, nombre comercial de WILVA CAPITAL DE WILSON CHOQUE URUÑO (empresa unipersonal, Bolivia). Deben revisarse y aprobarse antes de utilizarse como condiciones vinculantes para los clientes.</p>
+                <p><strong>2. Servicios:</strong> El sitio web anuncia pagos transfronterizos, transferencias internacionales relacionadas con SWIFT, operaciones relacionadas con USDT y cotizaciones de cambio de moneda. La disponibilidad depende del destino, la elegibilidad de la operación, la participación de terceros y la normativa aplicable.</p>
+                <p><strong>3. Información del cliente:</strong> Los clientes deben proporcionar instrucciones completas y exactas, así como información cuyo uso estén autorizados a realizar, incluidos los datos bancarios o de la billetera del destinatario.</p>
+                <p><strong>4. Cotizaciones y cargos:</strong> Los tipos de cambio y la disponibilidad pueden variar. Una cotización no constituye una operación completada. El sitio anuncia una comisión de servicio del 2%; antes de proceder, deben informarse y acordarse los demás cargos, el tipo de cambio y el importe que recibirá el destinatario.</p>
+                <p><strong>5. Plazos:</strong> Las confirmaciones de USDT podrían tomar minutos después de su aprobación; las transferencias SWIFT suelen demorar entre 24 y 72 horas hábiles. Las revisiones bancarias y las acciones de intermediarios pueden ocasionar demoras.</p>
+                <p><strong>6. Ejecución y cancelación:</strong> Las transferencias completadas en blockchain pueden ser irreversibles; la revocación de transferencias bancarias puede depender de terceros.</p>
             </div>
 
-            <!-- Tab 2: Risks -->
+            <!-- Pestaña 2: Riesgos -->
             <div id="content-risks" class="hidden space-y-3">
-                <p class="font-bold text-slate-900">RISK DISCLOSURE STATEMENT (DRAFT FOR REVIEW)</p>
-                <p><strong>1. Overview:</strong> Cross-border payments, foreign exchange and digital-asset transfers carry financial and operational risks.</p>
-                <p><strong>2. Exchange Rates:</strong> Rates may fluctuate before a quote is accepted. Third-party intermediary fees can affect the final received amount.</p>
-                <p><strong>3. USDT and Blockchain:</strong> USDT market liquidity and redemption are not guaranteed. Transfers to incorrect wallet addresses or incompatible networks cannot be reversed.</p>
-                <p><strong>4. Banks:</strong> SWIFT transfers may undergo reviews or holds by intermediary banking networks.</p>
+                <p class="font-bold text-slate-900">DIVULGACIÓN DE RIESGOS (BORRADOR PARA REVISIÓN)</p>
+                <p><strong>1. Descripción general:</strong> Los pagos transfronterizos, las operaciones de cambio de divisas y las transferencias de activos digitales conllevan riesgos financieros y operativos.</p>
+                <p><strong>2. Tipos de cambio:</strong> Los tipos de cambio pueden variar antes de que se acepte una cotización. Los cargos de intermediarios terceros pueden afectar el importe final recibido.</p>
+                <p><strong>3. USDT y blockchain:</strong> La liquidez de mercado y el reembolso de USDT no están garantizados. Las transferencias a direcciones de billetera incorrectas o a redes incompatibles no pueden revertirse.</p>
+                <p><strong>4. Bancos:</strong> Las transferencias SWIFT pueden ser objeto de revisiones o retenciones por parte de redes bancarias intermediarias.</p>
             </div>
 
-            <!-- Tab 3: Privacy -->
+            <!-- Pestaña 3: Privacidad -->
             <div id="content-privacy" class="hidden space-y-3">
-                <p class="font-bold text-slate-900">PRIVACY POLICY (DRAFT FOR REVIEW)</p>
-                <p><strong>1. Processing:</strong> We collect and process identification documents, contact details, account/wallet destinations and transaction details solely for compliance, quote processing and service execution.</p>
-                <p><strong>2. Sharing:</strong> Data may be transmitted to counterparties, banks or authorized platforms exclusively to fulfill requested cross-border payment operations.</p>
-                <p><strong>3. Contact:</strong> For inquiries regarding personal data: <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
+                <p class="font-bold text-slate-900">POLÍTICA DE PRIVACIDAD (BORRADOR PARA REVISIÓN)</p>
+                <p><strong>1. Tratamiento:</strong> Recopilamos y tratamos documentos de identidad, datos de contacto, datos de cuentas o billeteras de destino y detalles de las operaciones para fines de cumplimiento, preparación de cotizaciones y ejecución de los servicios solicitados.</p>
+                <p><strong>2. Comunicación de datos:</strong> Los datos podrán transmitirse a contrapartes, bancos o plataformas autorizadas únicamente para realizar las operaciones de pago transfronterizo solicitadas.</p>
+                <p><strong>3. Contacto:</strong> Para consultas sobre datos personales, escribe a <a href="mailto:wilson@wilvacapital.com" class="text-brand-pink font-semibold underline">wilson@wilvacapital.com</a>.</p>
             </div>
 
-            <!-- Tab 4: KYC/KYB -->
+            <!-- Pestaña 4: KYC/KYB -->
             <div id="content-kyc" class="hidden space-y-3">
-                <p class="font-bold text-slate-900">CUSTOMER VERIFICATION & AML (DRAFT FOR REVIEW)</p>
-                <p><strong>1. Purpose:</strong> In accordance with financial crime prevention standards, customer identity checks (KYC) and corporate verification (KYB) are required prior to processing transactions.</p>
-                <p><strong>2. Documentation:</strong> Identification credentials (C.I., Pasaporte, NIT) and source-of-funds validation may be requested.</p>
+                <p class="font-bold text-slate-900">VERIFICACIÓN DE CLIENTES Y PREVENCIÓN DE DELITOS FINANCIEROS (BORRADOR PARA REVISIÓN)</p>
+                <p><strong>1. Finalidad:</strong> De acuerdo con los estándares de prevención de delitos financieros, antes de procesar operaciones se requieren verificaciones de identidad de clientes (KYC) y verificaciones de empresas (KYB).</p>
+                <p><strong>2. Documentación:</strong> Se podrán solicitar documentos de identidad (C.I. o pasaporte), NIT y documentación que respalde el origen de los fondos.</p>
             </div>
 
         </div>
