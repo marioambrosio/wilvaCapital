@@ -15,7 +15,7 @@
     </div>
     <section id="footerTerms" class="scroll-mt-24 max-w-7xl mx-auto px-6 pt-8 mt-8 border-t border-slate-100" aria-labelledby="footerTermsTitle">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 id="footerTermsTitle" class="text-sm font-black text-slate-800">Términos y condiciones</h2>
+            <h2 id="footerTermsTitle" class="text-sm font-black text-slate-800">documentacion</h2>
             <p class="mt-2 text-xs leading-relaxed text-slate-500">
                 Al aceptar, confirmas que has leído los términos y condiciones aplicables al uso de este sitio y a las solicitudes de los servicios de WILVA CAPITAL.
                 <a href="legal.php#terms" class="font-bold text-brand-pink underline underline-offset-2 hover:text-brand-roseDark">Leer el documento completo</a>.
