@@ -22,7 +22,7 @@
             <a href="#ventajas" class="hover:text-brand-pink transition">Ventajas</a>
             <a href="#oficinas" class="hover:text-brand-pink transition">Oficinas</a>
             <a href="#faq" class="hover:text-brand-pink transition">FAQ</a>
-            <a href="#footerTerms" class="hover:text-brand-pink transition whitespace-nowrap">Términos y condiciones</a>
+            <a href="#footerTerms" class="hover:text-brand-pink transition whitespace-nowrap">documentacion</a>
         </nav>
 
         <!-- Botón de acción principal: Ahora lleva al Cotizador -->
