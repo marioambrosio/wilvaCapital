@@ -22,9 +22,7 @@
             </p>
             <div class="mt-4 flex flex-col items-center gap-3">
                 <p id="footerTermsStatus" class="text-xs text-slate-500" role="status" aria-live="polite">Aún no has aceptado estos términos.</p>
-                <button id="acceptFooterTerms" type="button" aria-pressed="false" class="px-5 py-2.5 rounded-xl bg-brand-pink hover:bg-brand-roseDark text-white text-xs font-black transition">
-                    Aceptar términos y condiciones
-                </button>
+                
             </div>
         </div>
     </section>
