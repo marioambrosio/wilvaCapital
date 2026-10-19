@@ -21,7 +21,7 @@
                 <a href="legal.php#terms" class="font-bold text-brand-pink underline underline-offset-2 hover:text-brand-roseDark">Leer el documento completo</a>.
             </p>
             <div class="mt-4 flex flex-col items-center gap-3">
-                <p id="footerTermsStatus" class="text-xs text-slate-500" role="status" aria-live="polite">Aún no has aceptado estos términos.</p>
+                <p id="footerTermsStatus" class="text-xs text-slate-500" role="status" aria-live="polite"></p>
                 
             </div>
         </div>
