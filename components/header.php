@@ -15,13 +15,14 @@
         </a>
 
         <!-- Menú de Navegación Principal (Enlaces internos con #) -->
-        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <nav class="hidden md:flex items-center gap-5 text-xs font-semibold text-slate-600">
             <a href="#inicio" class="hover:text-brand-pink transition">Inicio</a>
             <a href="#como-funciona" class="hover:text-brand-pink transition">¿Cómo funciona?</a>
             <a href="#cotizador" class="hover:text-brand-pink transition">Cotizador</a>
             <a href="#ventajas" class="hover:text-brand-pink transition">Ventajas</a>
             <a href="#oficinas" class="hover:text-brand-pink transition">Oficinas</a>
             <a href="#faq" class="hover:text-brand-pink transition">FAQ</a>
+            <a href="#footerTerms" class="hover:text-brand-pink transition whitespace-nowrap">Términos y condiciones</a>
         </nav>
 
         <!-- Botón de acción principal: Ahora lleva al Cotizador -->
@@ -47,6 +48,7 @@
         <a href="#ventajas" onclick="closeMobileMenu()" class="block hover:text-brand-pink transition">Ventajas</a>
         <a href="#oficinas" onclick="closeMobileMenu()" class="block hover:text-brand-pink transition">Oficinas</a>
         <a href="#faq" onclick="closeMobileMenu()" class="block hover:text-brand-pink transition">FAQ</a>
+        <a href="#footerTerms" onclick="closeMobileMenu()" class="block hover:text-brand-pink transition">Términos y condiciones</a>
         
         <div class="pt-2">
             <a href="#cotizador" onclick="closeMobileMenu()" class="w-full py-3 rounded-xl bg-brand-pink text-white text-xs font-bold flex items-center justify-center gap-2 shadow-md">

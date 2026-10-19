@@ -13,7 +13,7 @@
             <span>CONEXIÓN GLOBAL</span>
         </div>
     </div>
-    <section id="footerTerms" class="max-w-7xl mx-auto px-6 pt-8 mt-8 border-t border-slate-100" aria-labelledby="footerTermsTitle">
+    <section id="footerTerms" class="scroll-mt-24 max-w-7xl mx-auto px-6 pt-8 mt-8 border-t border-slate-100" aria-labelledby="footerTermsTitle">
         <div class="max-w-3xl mx-auto text-center">
             <h2 id="footerTermsTitle" class="text-sm font-black text-slate-800">Términos y condiciones</h2>
             <p class="mt-2 text-xs leading-relaxed text-slate-500">
